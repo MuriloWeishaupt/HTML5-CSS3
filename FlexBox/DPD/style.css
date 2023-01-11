@@ -1,0 +1,44 @@
+/* 
+Flex-direction: row 
+- Main Axis: Horizontal
+- Cross Axis: Vertical
+
+Flex-direction: Column
+- Main Axis: Vertical
+- Cross Axis: Horizontal
+
+
+Justify-Content: Alinha itens no Main Axis
+Align-Items: Alinha itens no Cross Axis
+*/
+
+
+.container {
+    display: flex;
+   flex-direction: row;
+   height: 200px;
+   background-color: red; 
+    
+    
+}
+.container div {
+    border: 1px solid black;
+    padding: 10px;
+    
+ }
+
+ .container .box-1 {
+    flex: 33%;
+ }
+
+ .container .box-2 {
+    flex: 33%;
+ }
+
+ .container .box-3 {
+    flex: 33%;
+ }
+
+
+
+ 

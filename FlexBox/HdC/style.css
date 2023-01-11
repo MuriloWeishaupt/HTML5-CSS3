@@ -1,0 +1,47 @@
+body {
+    
+}
+
+.container {
+    background-color: #EEE;
+    border: 2px solid red;
+    padding: 15px;
+    max-width: 300px;
+    height: 300px;
+
+    display: flex;
+     justify-content: space-between;
+     /* Alinhamento Horizontal */
+      align-items: center; 
+      /*Alinhamento Vertical */
+
+      flex-wrap: wrap;
+}
+
+.item {
+    background-color: #CCC;
+    border:2px solid blue;
+    height: 50px;
+    width: 50px;
+}
+
+.box {
+    background-color: #CCC;
+    border:2px solid blue;
+    height: 50px;
+     flex-basis: 30px; /*Quero que cada um dos elemento tenha 30px de base por padrão */
+}
+
+#item-1 {
+    flex-grow: 2; /*Define como um item irá crescer no Layout*/
+}
+
+#item-2 {
+    flex-grow: 1; /*Define como um item irá crescer no Layout*/
+}
+
+#item-3 {
+    flex-grow: 1; /*Define como um item irá crescer no Layout*/
+
+    flex-shrink: 2; /*Define como um item irá diminuir no Layout*/
+}
