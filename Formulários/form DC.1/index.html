@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Prática</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #5F7C8A;
+        }
+
+        form {
+            width: 70%;
+            max-width: 500px;
+            padding: 20px;
+            margin: 10px;
+            background-color: white;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 20px;
+        }
+
+        form h3 {
+            text-align: center;
+            color: #5F7C8A;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        form input[type=email],
+        form input[type=password] {
+           
+            width: 95%;
+            height: 40px;
+            padding: 15px;
+            margin: 10px;
+            border: 1px solid #5F7C8A;
+           
+        }
+
+        form input[type=submit] {
+            width: 95%;
+            height: 40px;
+            color: white;
+            background-color: #5F7C8A;
+            margin: 10px;
+            border: 1px solid #5F7C8A;
+            border-radius: 20px;
+            cursor: pointer;
+
+        }
+
+        form input[type=submit]:hover {
+            background-color: #465c67;
+            transition: 1s;
+        }
+    </style>
+</head>
+<body>
+    <form action="form.php">
+        <h3>Entrar em contato</h3>
+        <input type="email" name="email" id="email" placeholder="Seu Email...">
+        <input type="password" name="senha" id="senha" placeholder="Sua Senha...">
+        <input type="submit" value="Enviar">
+    </form>
+
+    <script>
+        let email = document.getElementById('email')
+
+        let password = document.getElementById('password')
+    </script>
+</body>
+</html>
